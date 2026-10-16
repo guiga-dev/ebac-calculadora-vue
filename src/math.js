@@ -1,0 +1,1 @@
+export function calculate(a,b,operation){if(a===''||b==='')return 'Preencha os dois números';const x=Number(a),y=Number(b);if(!Number.isFinite(x)||!Number.isFinite(y))return 'Informe números válidos';switch(operation){case '+':return x+y;case '-':return x-y;case '*':return x*y;case '/':return y===0?'Não é possível dividir por zero':x/y;default:return 'Escolha uma operação';}}

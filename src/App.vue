@@ -1,0 +1,5 @@
+<script setup>
+import {ref,computed} from 'vue';import {calculate} from './math.js';
+const first=ref(12),second=ref(3),operation=ref('+');const result=computed(()=>calculate(first.value,second.value,operation.value));
+</script>
+<template><main><span class="eyebrow">MATEMÁTICA EM TEMPO REAL</span><h1>Calculadora aritmética</h1><p>Altere os números ou a operação para calcular automaticamente.</p><label>Primeiro número<input v-model="first" type="number" step="any"/></label><label>Operação<select v-model="operation"><option value="+">Adição (+)</option><option value="-">Subtração (−)</option><option value="*">Multiplicação (×)</option><option value="/">Divisão (÷)</option></select></label><label>Segundo número<input v-model="second" type="number" step="any"/></label><output aria-live="polite">Resultado: {{ result }}</output><footer>Desenvolvido com Vue 3 • EBAC — módulo 27</footer></main></template>

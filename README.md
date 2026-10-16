@@ -1,2 +1,17 @@
-# ebac-calculadora-vue
-Calculadora aritmética reativa em Vue — exercício EBAC módulo 27
+# Calculadora aritmética
+
+Atividade EBAC.
+
+## Executar
+
+```sh
+npm ci
+npm run dev
+```
+
+## Validar
+
+```sh
+npm run build
+npm test
+```
